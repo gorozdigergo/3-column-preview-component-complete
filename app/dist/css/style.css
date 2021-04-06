@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+button {
+  font-family: "Lexend Deca",sans-serif;
+}
+
+h3 {
+  font-family: "Big Shoulders Display", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.875rem;
+}
+
+p {
+  font-size: 0, 9375rem;
+}
+
+.card {
+  color: #fff;
+  padding: 1.875rem;
+}
+
+.card img {
+  margin-bottom: 25px;
+}
+
+.card h3 {
+  margin-bottom: 1.25rem;
+}
+
+.card p {
+  margin-bottom: 1.875rem;
+  line-height: 1.6;
+}
+
+.card__bright-orange {
+  background: #e38826;
+  border-radius: 0.625rem 0.625rem 0 0;
+}
+
+.card__dark-cyan {
+  background: #006970;
+}
+
+.card__very-dark-cyan {
+  background: #004241;
+  border-radius: 0 0 0.625rem 0.625rem;
+}
+
+.card .btn {
+  background-color: #fff;
+  border: 0.125rem solid #fff;
+  border-radius: 1.875rem;
+  padding: 0.625rem 1.25rem;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.card .btn:hover {
+  background: transparent;
+  color: #fff;
+}
+
+.container {
+  padding: 1.25rem;
+}
+
+/*@media (min-width:992px) {
+    .container{
+        display: flex;
+        align-items:center;
+        justify-content:center;
+        min-height:100vh;
+        max-width:900px;
+        margin:auto;
+    }
+}*/
+@media (min-width: 62em) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 100vh;
+    max-width: 56.25rem;
+    margin: auto;
+  }
+  .card {
+    padding: 2.8125rem;
+  }
+  .card__bright-orange {
+    border-radius: 0.625rem 0 0 0.625rem;
+  }
+  .card__very-dark-cyan {
+    border-radius: 0 0.625rem 0.625rem 0;
+  }
+  .card p {
+    margin-bottom: 5rem;
+  }
+}
+
+@media (min-width: 80em) {
+  .container {
+    min-width: 1100px;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}

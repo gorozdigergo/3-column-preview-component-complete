@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body,
+button{
+    font-family: "Lexend Deca",sans-serif;
+}
+
+h3{
+    font-family: "Big Shoulders Display", sans-serif;
+    text-transform: uppercase;
+    font-size:1.875rem;
+}
+
+p{
+    font-size: $small-fs;
+}
+
+.card{
+    color:$white;
+    padding:1.875rem;
+    img{
+        margin-bottom:25px;
+    }
+    h3{
+        margin-bottom:1.25rem;
+    }
+    p{
+        margin-bottom: 1.875rem;
+        line-height:1.6;
+    }
+    &__bright-orange{
+        background:$brightorange;
+        border-radius: 0.625rem 0.625rem 0 0;
+    }
+    &__dark-cyan{
+        background:$darkcyan;
+    }
+    &__very-dark-cyan{
+        background:$verydarkcyan;
+        border-radius:0 0 0.625rem 0.625rem;
+    }
+    .btn{
+        background-color:$white;
+        border: 0.125rem solid $white;
+        border-radius: 1.875rem;
+        padding:0.625rem 1.25rem;
+        cursor:pointer;
+        transition: all 0.4s ease-in-out;
+    }
+    .btn:hover{
+        background:transparent;
+        color:$white;
+    }
+}
+
+.container{
+    padding:1.25rem;
+}
+//sima css
+/*@media (min-width:992px) {
+    .container{
+        display: flex;
+        align-items:center;
+        justify-content:center;
+        min-height:100vh;
+        max-width:900px;
+        margin:auto;
+    }
+}*/
+
+//scss :)
+@include breakpoint-up (medium){
+    .container{
+        display: flex;
+        align-items:center;
+        justify-content:center;
+        min-height:100vh;
+        max-width:56.25rem;
+        margin:auto;
+    }
+    .card{
+        padding:2.8125rem;
+        &__bright-orange{
+            border-radius:0.625rem 0 0 0.625rem;
+        }
+        &__very-dark-cyan{
+            border-radius: 0 0.625rem 0.625rem 0;
+        }
+
+        p{
+            margin-bottom:5rem;
+        }
+        
+    }
+
+}
+
+@include breakpoint-up(large){
+    .container{
+        min-width:1100px;
+    }
+}
